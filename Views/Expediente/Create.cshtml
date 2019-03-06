@@ -1,0 +1,31 @@
+﻿@model Expediente;
+@{
+    ViewData["Title"] = "Crear Expediente";
+    Layout = "Simple";
+    
+}
+
+<h1>@ViewData["Title"] </h1>
+<form method="POST">
+    <div>
+        <label asp-for="Rfc"></label>
+        <input asp-for="Rfc"/>
+    </div>
+    <div>
+        <label asp-for="Curp"></label>
+        <input asp-for="Curp"/>
+    </div>
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre"/>
+    </div>
+    <div>
+        <label asp-for="ApellidoPaterno"></label>
+        <input asp-for="ApellidoPaterno"/>
+    </div>
+    <div>
+        <label asp-for="ApellidoMaterno"></label>
+        <input asp-for="ApellidoMaterno"/>
+    </div>
+    <input type="submit"/>
+</form>
